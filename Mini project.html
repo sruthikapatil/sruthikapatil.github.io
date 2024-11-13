@@ -1,122 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Website</title>
-    <center><h1 style="font-size: 45;"> Hello Farmers</h1></center><p style=" color:white;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #3b8d99, #6a82fb); /* Gradient background */
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
 
+        h1, h2, h3 {
+            margin: 10px;
+            padding: 10px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Styling for the marquee section */
+        marquee {
+            background-color: #d9534f;
+            color: white;
+            font-size: 40px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /* Links */
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #5bc0de;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        a:hover {
+            background-color: #31b0d5;
+            transition: 0.3s;
+        }
+
+        /* Container for the content */
+        .content-container {
+            margin-top: 30px;
+        }
+
+        /* Box style for the tab links */
+        .tab {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .tab a {
+            background-color: #4caf50;
+            color: white;
+            padding: 12px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        /* Image Section */
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
-<marquee style="background-color:red;" ><h3 style="font-size:100;"><p style=" color:ash;">
-    Welcome To My Soyabean Website
-    </h3></p>
-  </marquee><br>
-    <hr>
-    
-     <div class="tab">
+    <!-- Welcome Marquee Section -->
+    <marquee><h3>Welcome to My Soyabean Website</h3></marquee>
 
-        <body> 
-            
-     <center>
-         
- <h1 style="background-color:teal;">
-    
- <br>
-    
-<br>
-    
-&nbsp;<a href="soyabean.html">*🔴《'Soyabean'》,</a>&nbsp;
-    
-</br>
+    <!-- Main Header -->
+    <h1>Hello Farmers</h1>
 
-    <br>
-    
-&nbsp;<a href="soyabeanyield.html">*🟠《'Soyabean yield'》,</a>&nbsp;
-    
-</br>
+    <!-- Navigation Links -->
+    <div class="tab">
+    <h2>Explore More About Soyabean:</h2>
+	
 
-    <br>
-    
-&nbsp;<a href="soyabeanseeds.html">*🟡《'Soyabean seeds'》, </a>&nbsp;
-    
-</br>
+<a href="soyabean.html"style="margin-right: 10px;">🔴 Soyabean</a>
+    <a href="soyabeanyield.html"style="margin-right: 10px;">🟠 Soyabean Yield</a>
+    <a href="soyabeanseeds.html"style="margin-right: 10px;">🟡 Soyabean Seeds</a>
+    <a href="soyabeansowing.html" style="margin-right: 10px;">🟢 Soyabean Sowing</a>
+    <a href="soyabeandiseases.html" style="margin-right: 10px;">🔵 Soyabean Diseases</a>
+	<a href="soyabeanharvesting.html" style="margin-right: 10px;">🟣 Soyabean Harvesting</a></br>
+	<a href="soyabeanmarketing.html" style="margin-right: 10px;">🔴 Soyabean Marketing</a>
+	<a href="Soybeanfactories.html" style="margin-right: 10px;">🟠 Soyabean Factories</a>
+	<a href="Soybeanproducts.html" style="margin-right: 10px;">🟡 Soyabean Products</a>
+	<a href="soyabeanmaterialselling.html" style="margin-right: 10px;">🟢 Soyabean Material Selling</a>
+	<a href="Soybeanuses.html">🔵 Soyabean Uses</a>
+    <a href="">🟣 Contact Us</a>
+</div>
 
-    <br>
-    
-&nbsp;<a href="soyabeansowing.html">*🟢《'Soyabean sowing'》,</a>&nbsp;
+    <!-- Inspirational Quote and Image -->
+    <div class="content-container">
+        <h1 style="background-color: #b33b72;"> " A Farmer does not just grow crops. A farmer works hard to create an environment where crops can grow like SOYABEAN ". </h1>
+        <div class="image-container">
+            <img src="soya.jpg" alt="Soyabean Image">
+        </div>
+        <h2 style="background-color: #f8c471;"> " Farmers don't just work till the sun goes down. They work till the job is done". </h2>
+    </div>
 
-</br>
-    
-<br>
-    
-&nbsp; <a href="soyabeandiseases.html">*🔵《'Soyabean diseases'》,</a>&nbsp;
-    
-</br>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Soyabean Website | All Rights Reserved</p>
+    </footer>
 
-    <br>
-    
-&nbsp;<a href=soyabeanharvesting.html>*🟣《'Soyabean harvesting'》,</a>&nbsp;
-
-</br>
-    
-&nbsp;
-    
-     <h1 style="background-color:grey;">
-         
-         <br> 
-         
-      <h1 style="background-color:#b33b72;">
-          
-         &nbsp; 
-    <br>  
-          
- &nbsp;<a href="soyabeanmarketing.html">*🔴《'Soyabean marketing'》,</a>&nbsp;
-
-      </br>
-
-          <br>
-          
-&nbsp;<a href="Soybeanfactories.html">*🟠《'Soyabean factories'》,</a>&nbsp;  
-
-      </br>
-
-          <br>
-          
-&nbsp;<a href="Soybeanproducts.html">*🟡《'Soyabean products'》,</a>&nbsp; 
-               
-      </br>
-
-       <br>
-          
-&nbsp;<a href="soyabeanmaterialselling.html">*🟢《'Soyabean material selling'》,</a>&nbsp;   
-       
-      </br>
-
-        <br>
-          
-&nbsp;<a href="Soybeanuses.html">*🔵《'Soyabean uses'》, </a>&nbsp;   
-
-      </br>
-
-          <br>
-          
-&nbsp;<a href="">*🟣《'contact us'》.</a>&nbsp;   
-               
-      </br>
-          
-          &nbsp; 
-          </br >
-         &nbsp;
-    <h1 style="background-color:#b33b72;">
-        
-     </center>
-        <body> 
-            <center>
-<h1 style="background-color:aqua;"> " A Farmer does not just grow crops. A farmer work hard to create an environment where crops can grow like SOYABEAN ". </h1>
-  <img src=soya.jpg height="600px" width="1320px">
-<h2 style="background-color:pink;"> " Farmer don't just work til the sun goes down. they work til the job is done". </h2> 
-     </center>
-         
 </body>
 </html>
-

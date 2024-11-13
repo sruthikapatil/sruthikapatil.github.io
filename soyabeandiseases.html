@@ -1,89 +1,188 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<body>
-<p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soybean Diseases</title>
+    <style>
+        /* Apply a light background color to the entire page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
 
-Soybeans are susceptible to many diseases, including: <br>
- 
-    1. Early-season diseases-<br>
+        /* Style the container to center content and give a max width */
+        .content {
+            width: 80%;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-* These include seed decay, seedling blights, and root rots.<br>
+        /* Style for paragraphs and line breaks */
+        p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
 
-* They are caused by fungi in the soil, such as Pythium, <br>
+        /* Style for headings */
+        h1, h2 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-top: 20px;
+        }
 
-* Phytophthora, Rhizoctonia, and Fusarium. <br>
- 
-2 . Foliar diseases-<br>
+        h2 {
+            font-size: 20px;
+            margin-top: 15px;
+            color: #2980b9;
+        }
 
-* These include bacterial blight, bacterial pustule, brown spot,<br>
+        /* Style for ordered and unordered lists */
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
 
-        downy mildew, frogeye leaf spot, Cercospora leaf blight, and soybean rust. <br>
- 
-3.  Viral diseases-<br>
+        li {
+            margin: 8px 0;
+        }
 
-*  These include bean pod mottle virus and soybean mosaic virus. <br> 
+        li::marker {
+            color: #2980b9;
+        }
 
-* Symptoms include mottled, crinkled leaves, mottled seed, and lower yields. <br>
- 
-4.  Green stem disorder-<br>
+        /* Style for specific list numbers */
+        ol li {
+            color: #34495e;
+            font-weight: bold;
+        }
 
-* This disorder affects the normal maturation of stem tissue. <br>
+        /* Special color for disease categories */
+        .disease-category {
+            color: #e74c3c;
+            font-weight: bold;
+        }
 
-*  Symptoms include fewer pods, and leaves or petioles may remain attached to the plant. <br>
- 
-5 . Some ways to manage soybean diseases include:<br> 
- 
- 1. Crop rotation -<br>
- 
-  * Selecting soybean varieties that are resistant to local diseases <br>
- 
-   2. Cultural management -<br>
- 
-   *  Chemical management, which may vary depending on the pathogen and environmental conditions <br>
+        /* Style for tips and management section */
+        .management-tips {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-left: 5px solid #16a085;
+            margin-top: 20px;
+        }
 
+        /* Add emphasis to action items */
+        .action-item {
+            color: #16a085;
+            font-weight: bold;
+        }
 
-   6. To control diseases use following steps <br>
- 
-     Here are some ways to control soybean diseases: <br>
- 
-    1. Plant disease-resistant varieties:<br>
-
-*  Choose a variety that is resistant to the diseases that are common in your area. <br>
- 
-2. Use fungicide:<br>
-
- *Apply fungicide to the seeds or to the leaves of the plants. <br>
-                                                                              
-* Fungicides with multiple modes of action are best. <br>
- 
-3. Rotate crops: <br>
-
- * Rotate soybeans with crops that are not susceptible to the same diseases,<br>
-
-      such as maize or sorghum. This breaks the disease cycle. <br>
-  
-4. Scout for disease:<br>  
- 
- * Regularly inspect your soybeans for signs of disease. <br>
- 
-5.  Manage weeds:<br>
- 
- * Weeds can help spread disease, so it's important to manage them. <br>
- 
-  *  Improve soil drainage: Install subsurface tile to improve drainage. <br>
- 
-6. Bury plant residue: <br>
- 
- * After harvest, plow the field to bury plant residue com pletely. <br>
- 
- 7. Keep records:<br>
- 
- * Keep a record of when and how severe diseases have occurred in your fields.<br> 
-
-*  This can help you decide how to manage the disease in the future. <br>
-
-</p>
-</body>
+        /* Create a footer with a background color */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+<body>
+
+<div class="content">
+    <h1>Soybean Diseases and Management</h1>
+
+    <p>Soybeans are susceptible to many diseases, including:</p>
+
+    <h2 class="disease-category">1. Early-season diseases</h2>
+    <ul>
+        <li>These include seed decay, seedling blights, and root rots.</li>
+        <li>They are caused by fungi in the soil, such as Pythium, Phytophthora, Rhizoctonia, and Fusarium.</li>
+    </ul>
+
+    <h2 class="disease-category">2. Foliar diseases</h2>
+    <ul>
+        <li>These include bacterial blight, bacterial pustule, brown spot, downy mildew, frogeye leaf spot, Cercospora leaf blight, and soybean rust.</li>
+    </ul>
+
+    <h2 class="disease-category">3. Viral diseases</h2>
+    <ul>
+        <li>These include bean pod mottle virus and soybean mosaic virus.</li>
+        <li>Symptoms include mottled, crinkled leaves, mottled seed, and lower yields.</li>
+    </ul>
+
+    <h2 class="disease-category">4. Green stem disorder</h2>
+    <ul>
+        <li>This disorder affects the normal maturation of stem tissue.</li>
+        <li>Symptoms include fewer pods, and leaves or petioles may remain attached to the plant.</li>
+    </ul>
+
+    <h2 class="disease-category">5. Some ways to manage soybean diseases include:</h2>
+    <ol>
+        <li class="action-item">Crop rotation</li>
+        <ul>
+            <li>Selecting soybean varieties that are resistant to local diseases.</li>
+        </ul>
+        <li class="action-item">Cultural management</li>
+        <ul>
+            <li>Chemical management, which may vary depending on the pathogen and environmental conditions.</li>
+        </ul>
+    </ol>
+
+    <h2 class="disease-category">6. To control diseases, use the following steps:</h2>
+    <ul>
+        <li class="action-item">Plant disease-resistant varieties</li>
+        <ul>
+            <li>Choose a variety that is resistant to the diseases that are common in your area.</li>
+        </ul>
+        <li class="action-item">Use fungicide</li>
+        <ul>
+            <li>Apply fungicide to the seeds or to the leaves of the plants.</li>
+            <li>Fungicides with multiple modes of action are best.</li>
+        </ul>
+        <li class="action-item">Rotate crops</li>
+        <ul>
+            <li>Rotate soybeans with crops that are not susceptible to the same diseases, such as maize or sorghum. This breaks the disease cycle.</li>
+        </ul>
+        <li class="action-item">Scout for disease</li>
+        <ul>
+            <li>Regularly inspect your soybeans for signs of disease.</li>
+        </ul>
+        <li class="action-item">Manage weeds</li>
+        <ul>
+            <li>Weeds can help spread disease, so it's important to manage them.</li>
+        </ul>
+        <li class="action-item">Improve soil drainage</li>
+        <ul>
+            <li>Install subsurface tile to improve drainage.</li>
+        </ul>
+        <li class="action-item">Bury plant residue</li>
+        <ul>
+            <li>After harvest, plow the field to bury plant residue completely.</li>
+        </ul>
+        <li class="action-item">Keep records</li>
+        <ul>
+            <li>Keep a record of when and how severe diseases have occurred in your fields.</li>
+            <li>This can help you decide how to manage the disease in the future.</li>
+        </ul>
+    </ul>
+
+    <div class="management-tips">
+        <p><strong>Pro Tip:</strong> Always scout your fields regularly and apply preventive treatments before symptoms appear!</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2024 Soybean Management Information</p>
+</footer>
+
+</body>
 </html>
- 

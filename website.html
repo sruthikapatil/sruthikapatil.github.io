@@ -1,77 +1,207 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP Website</title>
+    <style>
+        /* Basic reset */
+        body, h1, h2, p, ul {
+            margin: 0;
+            padding: 0;
+        }
 
-  
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-<center><h1 style="font-size: 45;"> Hello Coders</h1></center>
-      <hr>
-     <ul >
-<marquee style="background-color:grey;" ><h3 style="font-size: 30;"><p style=" color:red;">
-    Wellcome to SP Website
-    </h3></p>
-  </marquee><br>
-       
-       <hr>
-       
-       <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Flowers')">Flowers</button>
-  <button class="tablinks" onclick="openCity(event, 'Colors')">Colors</button>
-  <button class="tablinks" onclick="openCity(event, 'Designs')">Designs</button>
-  <button class="tablinks" onclick="opencity(event, 'Sports')">Sports</button> 
-    <button class="tablinks" onclick="opencity(event, 'Education')">Education</button> 
-  <button class="tablinks" onclick="opencity(event, 'Programing languages')">Programing languages</button>
- 
-    
-<div id="Flowers" class="tabcontent">
-</div>
+        /* Header Styling */
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            margin: 20px;
+            color: #fff;
+            background-color: #0073e6;
+            padding: 10px;
+        }
 
+        h2 {
+            font-size: 28px;
+            text-align: center;
+            background-color: #87ceeb;
+            padding: 15px;
+            color: #fff;
+        }
 
-<div id="Colors" class="tabcontent">
-</div>
+        /* Marquee Styling */
+        marquee {
+            background-color: grey;
+            color: red;
+            font-size: 30px;
+            padding: 10px;
+        }
 
-         
-<div id="Designs" class="tabcontent">
-</div>
+        /* Tab navigation */
+        .tab {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            background-color: #333;
+        }
 
+        .tab button {
+            background-color: #333;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            cursor: pointer;
+            width: 16%;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
 
- <div id ="Sports" class= "tabcontent">              
- </div>
+        .tab button:hover {
+            background-color: #555;
+        }
 
+        /* Tab content */
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
- <div id ="Education" class= "tabcontent"> 
- </div>
- 
-         
-<div id ="Programing Language" class= "tabcontent"> 
-  
- &nbsp;
-    
-  
-<button type="button" onclick="alert('Hello world!')">Click Me!</button>
+        .tabcontent a {
+            color: #0073e6;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px;
+        }
 
-         
-       <p><a href="https://www.pexels.com/search/flowers//">Flowers</a></p>
- <p><a href="https://tagvault.org/blog/types-of-colors/"> Colors </a></p>
-<p><a href="https://www.bopdesign.com/bop-blog/2018/11/how-design-impacts-you///">Design</a></p>
-<p><a href="https://bestdiplomats.org/most-popular-sports-in-india/">Sports</a></p>
-<p><a href="https://research.com/education/why-is-education-important/"> Education </a></p>
-<p><a href="https://www.tiobe.com/tiobe-index/t/"> Programing Language!</a></p>
-​      
-         </ul>
+        .tabcontent a:hover {
+            color: #0056b3;
+        }
 
-  
-   <body> 
-     <center>
-        <h1 style="background-color:pink;"> " CHANGE YOURSELF NOT THE NATURE "</h1>
-<img src=nature.jpg height="600px" width="1320px">
- <h2 style="background-color:skyblue;"> " COLORS ARE THE SMILES OF NATURE "</h2>
+        /* Button Styling */
+        button[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-</center>
+        button[type="button"]:hover {
+            background-color: #45a049;
+        }
 
-  
+        /* Image and footer */
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
 
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #777;
+        }
+    </style>
+</head>
 
-  
+<body>
+
+    <!-- Main Header -->
+    <h1>Hello Coders</h1>
+    <hr>
+
+    <!-- Welcome Marquee -->
+    <marquee>
+        <h3>Welcome to SP Website</h3>
+    </marquee>
+    <hr>
+
+    <!-- Tabs Navigation -->
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Flowers')">Flowers</button>
+        <button class="tablinks" onclick="openCity(event, 'Colors')">Colors</button>
+        <button class="tablinks" onclick="openCity(event, 'Designs')">Designs</button>
+        <button class="tablinks" onclick="openCity(event, 'Sports')">Sports</button>
+        <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+        <button class="tablinks" onclick="openCity(event, 'Programming')">Programming Languages</button>
+    </div>
+
+    <!-- Tab Content Sections -->
+    <div id="Flowers" class="tabcontent">
+        <p>Explore the beauty of flowers.</p>
+        <p><a href="https://www.pexels.com/search/flowers//">Learn more about flowers</a></p>
+    </div>
+
+    <div id="Colors" class="tabcontent">
+        <p>Discover the colors of the world.</p>
+        <p><a href="https://tagvault.org/blog/types-of-colors/">Learn more about colors</a></p>
+    </div>
+
+    <div id="Designs" class="tabcontent">
+        <p>Design influences the way we see the world.</p>
+        <p><a href="https://www.bopdesign.com/bop-blog/2018/11/how-design-impacts-you///">Learn more about design</a></p>
+    </div>
+
+    <div id="Sports" class="tabcontent">
+        <p>Sports keep us active and healthy.</p>
+        <p><a href="https://bestdiplomats.org/most-popular-sports-in-india/">Learn more about sports</a></p>
+    </div>
+
+    <div id="Education" class="tabcontent">
+        <p>Education is the key to a brighter future.</p>
+        <p><a href="https://research.com/education/why-is-education-important/">Learn more about education</a></p>
+    </div>
+
+    <div id="Programming" class="tabcontent">
+        <p>Programming is the language of computers.</p>
+        <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+        <p><a href="https://www.tiobe.com/tiobe-index/t/">Learn more about programming languages</a></p>
+    </div>
+
+    <!-- Centered Inspirational Quote and Image -->
+    <center>
+        <h1 style="background-color:pink;">"CHANGE YOURSELF, NOT THE NATURE"</h1>
+        <img src="nature.jpg" alt="Nature Image" height="600px" width="1320px">
+        <h2>"COLORS ARE THE SMILES OF NATURE"</h2>
+    </center>
+
+    <footer>
+        <p>&copy; 2024 SP Website | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript for Tabs -->
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
 </body>
+
 </html>
