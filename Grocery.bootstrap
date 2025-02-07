@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="container-fluid p-5 bg-primary text-white text-center">
+<head>
+    <title>THE BEST GROCERY </title>
+</head>
+<p>Resize this responsive page to see the effect!</p>
+</div>
+<body></body>
+
+</html>
+
 <div class="container-fluid p-5 bg-primary text-white text-center">
  <h1>THE BEST GROCERY</h1>
 <p>Resize this responsive page to see the effect!</p>
